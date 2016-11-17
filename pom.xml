@@ -10,13 +10,19 @@
     <version>1.0.0</version>
     <name>quickstart webapp - parent pom</name>
 
-    <dependencies>
+    <properties>
+        <spring.version>4.2.6.RELEASE</spring.version>
+        <javax.servlet.version>2.5</javax.servlet.version>
+        <jstl.version>1.2</jstl.version>
 
-
-    </dependencies>
+        <skip.tests>true</skip.tests>
+    </properties>
 
     <modules>
         <module>spring-jsp</module>
+        <module>spring-freemarker</module>
+        <module>jee-servlet</module>
+        <module>jee-no-servlet</module>
     </modules>
 
 </project>
