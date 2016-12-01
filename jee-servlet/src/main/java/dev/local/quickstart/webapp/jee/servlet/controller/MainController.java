@@ -1,5 +1,8 @@
 package dev.local.quickstart.webapp.jee.servlet.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainController extends HttpServlet {
+
+  private static final Logger log = LoggerFactory.getLogger(MainController.class);
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)

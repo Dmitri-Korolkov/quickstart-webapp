@@ -85,7 +85,7 @@
     <!-- filter-->
     <filter>
         <filter-name>mainFilter</filter-name>
-        <filter-class>dev.local.quickstart.webapp.spring.freemarker.filter.MainFilter</filter-class>
+        <filter-class>dev.local.quickstart.webapp.spring.freemarker.test.filter.MainFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>mainFilter</filter-name>

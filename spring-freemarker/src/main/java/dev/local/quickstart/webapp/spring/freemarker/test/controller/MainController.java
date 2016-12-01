@@ -1,4 +1,4 @@
-package dev.local.quickstart.webapp.spring.freemarker.controller;
+package dev.local.quickstart.webapp.spring.freemarker.test.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package dev.local.quickstart.webapp.spring.freemarker.filter;
+package dev.local.quickstart.webapp.spring.freemarker.test.filter;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
