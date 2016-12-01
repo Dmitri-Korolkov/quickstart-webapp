@@ -17,6 +17,7 @@
         <slf4j.version>1.7.21</slf4j.version>
 
         <skip.tests>true</skip.tests>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <modules>
