@@ -7,10 +7,11 @@ import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
+import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.util.*;
 
-@ServerEndpoint("/ws")
+@ServerEndpoint("/api/ws/{id}")
 public class WSController {
 
   private static final Logger log = LoggerFactory.getLogger(WSController.class);
@@ -27,15 +28,13 @@ public class WSController {
     peers.remove(peer);
   }
 
-
   @OnMessage
-  public String onMessage(String message) {
-    callSessions(message);
+  public String onMessage(String message, @PathParam("id")String id) {
+    callPeers(message);
     return null;
   }
 
-
-  private void callSessions(String msg) {
+  private void callPeers(String msg) {
 
     Iterator<Session> iterator = peers.iterator();
 

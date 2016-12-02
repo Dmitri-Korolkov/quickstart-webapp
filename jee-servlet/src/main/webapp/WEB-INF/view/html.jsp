@@ -4,9 +4,8 @@
 <head>
     <title>Title</title>
 
-
     <script>
-        var ws = new WebSocket("ws://localhost:8888/ws");
+        var ws = new WebSocket("ws://" + location.host + "/api/ws/0");
         ws.onopen = function () {
             console.log("ws is open");
         };
@@ -22,17 +21,17 @@
             ws.close();
         }
 
-
-
     </script>
 
 </head>
 <body>
+
 <ul>
     <c:forEach items="${books}" var="item">
         <li>${item}</li>
     </c:forEach>
 </ul>
+
 <textarea id="chatlog" readonly></textarea><br/>
 <input id="msg" type="text"/>
 <button type="submit" id="sendButton2" onClick="postToServer()">Send!</button>
