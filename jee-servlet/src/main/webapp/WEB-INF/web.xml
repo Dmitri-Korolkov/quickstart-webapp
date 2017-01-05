@@ -8,6 +8,9 @@
 
   <servlet>
     <servlet-name>default</servlet-name>
+    <!--<servlet-class>-->
+      <!--org.apache.catalina.servlets.DefaultServlet-->
+    <!--</servlet-class>-->
     <init-param>
       <param-name>aliases</param-name>
       <param-value>false</param-value>

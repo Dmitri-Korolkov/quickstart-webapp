@@ -1,4 +1,4 @@
-package dev.local.quickstart.webapp.spring.freemarker.test.config;
+package dev.local.quickstart.webapp.spring.freemarker.config;
 
 import org.springframework.context.annotation.Configuration;
 

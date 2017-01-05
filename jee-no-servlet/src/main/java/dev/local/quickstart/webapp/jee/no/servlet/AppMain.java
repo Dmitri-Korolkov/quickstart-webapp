@@ -1,4 +1,4 @@
-package dev.local.quickstart.webapp.jee.no.servlet.test;
+package dev.local.quickstart.webapp.jee.no.servlet;
 
 import com.sun.net.httpserver.HttpServer;
 import org.slf4j.Logger;

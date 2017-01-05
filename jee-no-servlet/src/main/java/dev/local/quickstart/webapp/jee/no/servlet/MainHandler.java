@@ -1,4 +1,4 @@
-package dev.local.quickstart.webapp.jee.no.servlet.test;
+package dev.local.quickstart.webapp.jee.no.servlet;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
